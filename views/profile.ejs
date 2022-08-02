@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Profile Page</title>
+        <%- include('common/header'); %>
+    </head>
+    <body>
+        Welcome <%= user.name %><br>
+        Email : <%= user.email %><br>
+        City : <%= user.city %>
+        <ul>
+            <% user.Skills.forEach((item)=>{ %>
+                <li><%= item %></li>
+            <% }) %>
+        </ul>
+    </body>
+
+</html>
